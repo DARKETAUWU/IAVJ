@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 // using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class SteeringBehavior : MonoBehaviour
+public class NewSteeringBehavior : MonoBehaviour
 {
 
     // Porque son redundantes

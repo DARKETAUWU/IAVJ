@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class AStarAgent : NewSteeringBehaviors
+public class AStarAgent : NewSteeringBehavior
 {
     public int2 StartPosition = int2.zero;
     public int2 EndPosition = int2.zero;
+
+    // Booleano que marca si el agente es seleccionado o no
+    public bool bSelected = false;
 
     // Lista donde guardaremos los puntos que nos regrese el método de A*
     public List<Vector3> Route;
@@ -14,14 +17,13 @@ public class AStarAgent : NewSteeringBehaviors
     // Qué tan cerca tiene que estar el agente del punto objetivo para cambiar al siguiente punto.
     public float fDistanceThreshold;
 
-    PahfindingTest _PathfindingReference;
+    PathFinding _PathfindingReference;
 
     ClassGrid _GridReference;
 
     int iCurrentRoutePoint = 0;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         _PathfindingReference = GameObject.FindGameObjectWithTag("grid").GetComponent<PahfindingTest>();
@@ -35,10 +37,34 @@ public class AStarAgent : NewSteeringBehaviors
         Route = _GridReference.ConvertBacktrackToWorldPos(AStarResult);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //Si esta marcado y se usa click izquierdo:
+        if (bSelected && Input.GetKey(KeyCode.Mouse0))
+        {
+            Vector3 mouse1Pos = Input.mousePosition;
+            {
+                //tengo pensado que con este se marque como inicio de camino
+            }
+        }
 
+        //Si esta marcado y se usa click derecho:
+        if (bSelected && Input.GetKey(KeyCode.Mouse1))
+        {
+            Vector3 mouse2Pos = Input.mousePosition;
+            {
+                //tengo pensado que con este se marque como final del camino
+            }
+        }
+
+        ////Si esta marcado y se presiona la rueda del ratón:
+        //if (bSelected && Input.GetKey(KeyCode.Mouse2))
+        //{
+        //    Vector3 mouse3Pos = Input.mousePosition;
+        //    {
+                    //tengo pensado que con este se marque como no caminable
+        //    }
+        //}
 
     }
 
