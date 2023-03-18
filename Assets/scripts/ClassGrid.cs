@@ -61,6 +61,8 @@ public class ClassGrid
     public bool bShowDebug = true;
     public GameObject debugGO = null;
 
+    private GameObject GridGO;
+
     // int -> default = 0
     // bool -> default = false...
 
@@ -95,6 +97,10 @@ public class ClassGrid
 
             Debug.DrawLine(GetWorldPosition(0, iHeight), GetWorldPosition(iWidth, iHeight), Color.white, 100f);
             Debug.DrawLine(GetWorldPosition(iWidth, 0), GetWorldPosition(iWidth, iHeight), Color.white, 100f);
+            GridGO = GameObject.Find("GridDebugParent");
+            GridGO.transform.position = new Vector3 (7,-1,0);
+            GridGO.transform.localScale = new Vector3 (1f, 1, 1f);
+
         }
 
     }

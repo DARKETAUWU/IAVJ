@@ -26,7 +26,7 @@ public class AStarAgent : NewSteeringBehavior
 
     void Start()
     {
-        _PathfindingReference = GameObject.FindGameObjectWithTag("grid").GetComponent<PahfindingTest>();
+        _PathfindingReference = GameObject.FindGameObjectWithTag("grid").GetComponent<PathFinding>();
 
         _GridReference = _PathfindingReference.myGrid;
 
@@ -42,8 +42,9 @@ public class AStarAgent : NewSteeringBehavior
         //Si esta marcado y se usa click izquierdo:
         if (bSelected && Input.GetKey(KeyCode.Mouse0))
         {
-            Vector3 mouse1Pos = Input.mousePosition;
+            Vector3 mouse0Pos = Input.mousePosition;
             {
+                Route[0] = mouse0Pos;
                 //tengo pensado que con este se marque como inicio de camino
             }
         }
@@ -51,16 +52,16 @@ public class AStarAgent : NewSteeringBehavior
         //Si esta marcado y se usa click derecho:
         if (bSelected && Input.GetKey(KeyCode.Mouse1))
         {
-            Vector3 mouse2Pos = Input.mousePosition;
+            Vector3 mouse1Pos = Input.mousePosition;
             {
-                //tengo pensado que con este se marque como final del camino
+                Route[1] = mouse1Pos;
             }
         }
 
         ////Si esta marcado y se presiona la rueda del ratón:
         //if (bSelected && Input.GetKey(KeyCode.Mouse2))
         //{
-        //    Vector3 mouse3Pos = Input.mousePosition;
+        //    Vector3 mouse2Pos = Input.mousePosition;
         //    {
                     //tengo pensado que con este se marque como no caminable
         //    }
