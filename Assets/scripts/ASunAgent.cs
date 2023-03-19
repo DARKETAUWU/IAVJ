@@ -8,10 +8,8 @@ public class ASunAgent : NewSteeringBehavior
     public Vector3 v3StartPosition;
     public Vector3 v3EndPosition;
 
+    public Collider CCollider;
     public GameObject GOStart, GOEnd;
-
-    // Booleano que marca si el agente es seleccionado o no
-    public bool bSelected = false;
 
     // Lista donde guardaremos los puntos que nos regrese el método de A*
     public List<Vector3> Route;
@@ -27,6 +25,8 @@ public class ASunAgent : NewSteeringBehavior
 
     void Start()
     {
+        myRigidbody.isKinematic = true;
+
         _PathfindingReference = GameObject.FindGameObjectWithTag("grid").GetComponent<PathFinding>();
 
         _GridReference = _PathfindingReference.myGrid;
@@ -36,39 +36,6 @@ public class ASunAgent : NewSteeringBehavior
 
         // Usamos esa lista de nodos para sacar las posiciones de mundo a las cuales hacer Seek o Arrive.
         Route = _GridReference.ConvertBacktrackToWorldPos(AStarResult);
-    }
-
-    void Update()
-    {
-        //Si esta marcado y se usa click izquierdo:
-        if (bSelected && Input.GetKey(KeyCode.Mouse0))
-        {
-            Vector3 mouse0Pos = Input.mousePosition/10;
-            {
-                v3StartPosition = mouse0Pos;
-                GOStart.transform.position = mouse0Pos;
-            }
-        }
-
-        //Si esta marcado y se usa click derecho:
-        if (bSelected && Input.GetKey(KeyCode.Mouse1))
-        {
-            Vector3 mouse1Pos = Input.mousePosition/10;
-            {
-                v3EndPosition = mouse1Pos;
-                GOEnd.transform.position = mouse1Pos;
-            }
-        }
-
-        ////Si esta marcado y se presiona la rueda del ratón:
-        //if (bSelected && Input.GetKey(KeyCode.Mouse2))
-        //{
-        //    Vector3 mouse2Pos = Input.mousePosition;
-        //    {
-        //tengo pensado que con este se marque como no caminable
-        //    }
-        //}
-
     }
 
     private void FixedUpdate()
@@ -118,19 +85,37 @@ public class ASunAgent : NewSteeringBehavior
         // Hacemos un Clamp para que no exceda la velocidad máxima que puede tener el agente
         myRigidbody.velocity = Vector3.ClampMagnitude(myRigidbody.velocity, fMaxSpeed);
     }
-    public void Selected()
+
+    void OnTriggerEnter(Collider collision)
     {
-        if (bSelected == true)
+        if (collision.gameObject.CompareTag("Default"))
         {
-            bSelected = false;
-            return;
+            if (StartEnd.bA2 == true)
+                StartEnd.bA2 = false;
+
+            if (StartEnd.bA1 == false)
+            {
+                StartEnd.bA1 = true;
+                Debug.Log("VERDAD1");
+                return;
+            }
+
+            else
+            {
+                Debug.Log("FALSO1");
+                StartEnd.bA1 = false;
+            }
+
         }
-        
-        else if(bSelected == false)
-        {
-            bSelected = true;
-            return;
-        }
+    }
+
+public void StartRoute()
+    {
+        transform.position = GOStart.transform.position;
+        CCollider.isTrigger = true;
+        myRigidbody.isKinematic = false;
+        Route[0] = GOStart.transform.position;
+        Route[1] = GOEnd.transform.position;
     }
 }
 /*Requisitos del programa:
