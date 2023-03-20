@@ -11,6 +11,8 @@ public class ASunAgent : NewSteeringBehavior
     public Collider CCollider;
     public GameObject GOStart, GOEnd;
 
+    public int _Xstart, _Ystart, _Xend, _Yend;
+
     // Lista donde guardaremos los puntos que nos regrese el método de A*
     public List<Vector3> Route;
 
@@ -21,8 +23,12 @@ public class ASunAgent : NewSteeringBehavior
 
     ClassGrid _GridReference;
 
+    
+    
+
     int iCurrentRoutePoint = 0;
 
+    
     void Start()
     {
         myRigidbody.isKinematic = true;
@@ -31,11 +37,38 @@ public class ASunAgent : NewSteeringBehavior
 
         _GridReference = _PathfindingReference.myGrid;
 
-        // Guardamos el resultado de nuestro A*
-        List<Node> AStarResult = _GridReference.AStarSearch(0, 0, 4, 0);
 
+        //List<Node> AStarResult = _GridReference.AStarSearch(0, 1, 4, 1);
+        //se modificara la barra para que podamos ingresarle al momento de chocar las bases mmmm
+        //puedo.... hacer que cuando detecte el grid le mande un valor primero y despues el otro
+        //creo queserian muchos ifs
+        //o un case
+        
+        
+
+        
+
+    }
+
+    //funciona para moverse en linea recta y buscando el final del nodo
+
+    public void StartRoute()
+    {
+        Debug.Log(_Xend);
+        Debug.Log(_Yend);
+        Debug.Log(_Xstart);
+        Debug.Log(_Ystart);
+        transform.position = GOStart.transform.position;
+        // Guardamos el resultado de nuestro A* lo cual hace que sea su inicio y su meta
+        List<Node> AStarResult = _GridReference.AStarSearch(0, 0, 1, 1);
         // Usamos esa lista de nodos para sacar las posiciones de mundo a las cuales hacer Seek o Arrive.
         Route = _GridReference.ConvertBacktrackToWorldPos(AStarResult);
+
+        //Manda al monito a la posicion inicial del nodo
+        CCollider.isTrigger = true;
+        myRigidbody.isKinematic = false;
+        //Route[0] = GOStart.transform.position;
+        //Route[1] = GOEnd.transform.position;
     }
 
     private void FixedUpdate()
@@ -54,16 +87,7 @@ public class ASunAgent : NewSteeringBehavior
             {
                 iCurrentRoutePoint++;
                 iCurrentRoutePoint = math.min(iCurrentRoutePoint, Route.Count - 1);
-                // Hay que checar si es el último punto de la ruta a seguir.
-                //if (iCurrentRoutePoint >= Route.Count)
-                //{
-                //    // Ya nos acabamos los puntos de esta ruta.
-                //    // Podemos borrar esta ruta que terminamos.
-                //    Route = null;
-                //    iCurrentRoutePoint = -1;
-                //    bUseArrive = false;
-                //    return;
-                //}
+
             }
 
             if (iCurrentRoutePoint == Route.Count - 1)
@@ -107,40 +131,16 @@ public class ASunAgent : NewSteeringBehavior
             }
 
         }
+
+
     }
 
-public void StartRoute()
-    {
-        transform.position = GOStart.transform.position;
-        CCollider.isTrigger = true;
-        myRigidbody.isKinematic = false;
-        Route[0] = GOStart.transform.position;
-        Route[1] = GOEnd.transform.position;
-    }
 }
 /*Requisitos del programa:
-1) Control del agente y de la aplicación: (Total: 60 puntos).
-
-c. Una vez seleccionado, con el click derecho del mouse en la cuadrícula, seleccionar el
-cuadro/nodo fin para el pathfinding, excepto si es click sobre el AStarAgent
-seleccionado, en cuyo caso, se deseleccionará. 10 puntos.
-
-
-c. Una vez seleccionado, con el click derecho del mouse en la cuadrícula, seleccionar el
-cuadro/nodo fin para el pathfinding, excepto si es click sobre el AStarAgent
-seleccionado, en cuyo caso, se deseleccionará. 10 puntos.
 
 d. Si se selecciona el nodo inicio para pathfinding como el nodo fin para pathfinding (o
 viceversa), se debe sobrescribir y ser el nuevo nodo fin/inicio, respectivamente.
-e. Una vez que haya un nodo inicio y un nodo fin de pathfinding, al presionar un botón
-(por ejemplo, click central o barra espaciadora), ejecutar el pathfinding y que su
 
-AStarAgent se mueva por el camino usando steering behaviors como se vió en la clase
-del 9 de marzo de 2023. 30 puntos.
-f. NOTA: En clase vimos cómo convertir el X y Y de un nodo a su posición de mundo; para
-hacer esta función tienen que hacer el proceso “inverso”, es decir, convertir de una
-posición de mundo (o pantalla, según sea su implementación) a su posición en
-coordenadas X y Y de la cuadrícula.
 
 2) Mostrar los valores g_cost, h_cost, y f_cost de la cuadrícula (tras ejecutar A*). (Total 15 puntos).
 

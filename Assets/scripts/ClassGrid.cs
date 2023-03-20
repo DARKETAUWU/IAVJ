@@ -63,8 +63,8 @@ public class ClassGrid
 
     private GameObject GridGO;
 
-    // int -> default = 0
-    // bool -> default = false...
+   
+
 
     public ClassGrid(int in_height, int in_width, float in_fTileSize = 10.0f, Vector3 in_v3OriginPosition = default)
     {
@@ -86,17 +86,21 @@ public class ClassGrid
             {
                 for (int x = 0; x < iWidth; x++)
                 {
-                    debugTextArray[y, x] = CreateWorldText2(Nodes[y, x].ToString(),
-                    debugGO.transform, GetWorldPosition(x, y) + new Vector3(fTileSize * 0.5f, fTileSize * 0.5f),
-                    30, Color.white, TextAnchor.MiddleCenter);
+                    //crea el array
+                    //funciona para escribir las posiciones del array
+                    debugTextArray[y, x] =  CreateWorldText2(Nodes[y, x].ToString(),
+                                            debugGO.transform, GetWorldPosition(x, y) + new Vector3(fTileSize * 0.5f, fTileSize * 0.5f),
+                                            30, Color.green, TextAnchor.MiddleCenter);
+                    
+                    //Instantiate(tile, GetWorldPosition(x, y) + new Vector3(fTileSize * 0.5f, fTileSize * 0.5f), Quaternion.identity, debugGO.transform);
                     //// Dibujamos líneas en el mundo para crear nuestra cuadrícula.
-                    Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1), Color.white, 100f);
-                    Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x + 1, y), Color.white, 100f);
+                    Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y), Color.green, 100f);
+                    Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y), Color.green, 100f);
                 }
             }
 
-            Debug.DrawLine(GetWorldPosition(0, iHeight), GetWorldPosition(iWidth, iHeight), Color.white, 100f);
-            Debug.DrawLine(GetWorldPosition(iWidth, 0), GetWorldPosition(iWidth, iHeight), Color.white, 100f);
+            Debug.DrawLine(GetWorldPosition(0, iHeight), GetWorldPosition(iWidth, iHeight), Color.green, 100f);
+            Debug.DrawLine(GetWorldPosition(iWidth, 0), GetWorldPosition(iWidth, iHeight), Color.green, 100f);
             GridGO = GameObject.Find("GridDebugParent");
             GridGO.transform.position = new Vector3 (7,-1,0);
             GridGO.transform.localScale = new Vector3 (1f, 1, 1f);
@@ -185,8 +189,7 @@ public class ClassGrid
                     OpenList.Push(currentNeighbors[x]);
                 }
             }
-            // foreach (Node n in OpenList)
-            //    Debug.Log("n Node is: " + n.x + ", " + n.y);
+           
 
         }
 
@@ -366,8 +369,7 @@ public class ClassGrid
                 return path;
             }
 
-            // Checamos si ya está en la lista cerrada
-            // NOTA: Aquí VOLVEREMOS DESPUÉS 27 de febrero 2023
+            
             if (ClosedList.Contains(currentNode))
             {
                 continue;
@@ -418,6 +420,7 @@ public class ClassGrid
 
     public List<Node> AStarSearch(int in_startX, int in_startY, int in_endX, int in_endY)
     {
+      
         Node StartNode = GetNode(in_startX, in_startY);
         Node EndNode = GetNode(in_endX, in_endY);
 
@@ -449,12 +452,13 @@ public class ClassGrid
                 Debug.Log("Camino encontrado");
                 // Necesitamos construir ese camino. Para eso hacemos backtracking.
                 List<Node> path = Backtrack(currentNode);
+                
                 EnumeratePath(path);
                 return path;
             }
 
             // Checamos si ya está en la lista cerrada
-            // NOTA: Aquí VOLVEREMOS DESPUÉS 27 de febrero 2023
+            
             if (ClosedList.Contains(currentNode))
             {
                 continue;
@@ -570,13 +574,32 @@ public class ClassGrid
     // Enumera un camino en el orden que tiene y lo muestra en los debugTextArray.
     public void EnumeratePath(List<Node> in_path)
     {
+
+        
+        
+            for (int y = 0; y < iHeight; y++)
+            {
+                for (int x = 0; x < iWidth; x++)
+                {
+                    debugTextArray[y,x].text = Nodes[y, x].ToString();
+                    debugTextArray[y, x].color = Color.blue; 
+
+                }
+            }
+       
+
         int iCounter = 0;
         foreach (Node n in in_path)
         {
             iCounter++;
             debugTextArray[n.y, n.x].text = n.ToString() +
-                Environment.NewLine + "step: " + iCounter.ToString();
+                Environment.NewLine + "Step: " + iCounter.ToString();
+            debugTextArray[n.y, n.x].color =  Color.red;;
+           
         }
+
+       
+
     }
 
     public int GetDistance(Node in_a, Node in_b)
@@ -595,6 +618,8 @@ public class ClassGrid
         TextAnchor in_textAnchor = TextAnchor.UpperLeft, TextAlignment in_textAlignment = TextAlignment.Left)
     {
         // if (in_color == null) in_color = Color.white;
+        if (in_color == null) in_color = Color.gray;
+
         GameObject MyObject = new GameObject(in_text, typeof(TextMesh));
         MyObject.transform.parent = in_parent;
         MyObject.transform.localPosition = in_localPosition;
@@ -624,7 +649,7 @@ public class ClassGrid
     Color in_color = default, TextAnchor in_textAnchor = TextAnchor.UpperLeft,
     TextAlignment in_textAlignment = TextAlignment.Left)
     {
-        if (in_color == null) in_color = Color.white;
+        if (in_color == null) in_color = Color.gray;
 
         // Creamos un GameObject (GO) que tendrá el componente TextMesh donde se mostrará el texto deseado
         GameObject tempGO = new GameObject("World Text", typeof(TextMesh));
@@ -638,7 +663,7 @@ public class ClassGrid
         textMesh.alignment = in_textAlignment;
         textMesh.text = in_text;
         textMesh.fontSize = in_iFontSize;
-        textMesh.color = in_color;
+        textMesh.color = Color.gray;
         return textMesh;
     }
 

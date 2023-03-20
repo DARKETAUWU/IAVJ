@@ -7,6 +7,8 @@ public class StartEnd : MonoBehaviour
     public GameObject GOCamera, GOStarter, GOEnder, GOStarter2, GOEnder2, GODefault;
     public static bool bA1 = false, bA2 = false;
 
+    PathFinding reference;
+
     private void Start()
     {
         GOCamera.transform.position = new Vector3(44f, 25f, -10f);
@@ -113,4 +115,6 @@ public class StartEnd : MonoBehaviour
             GOEnder2.SetActive(false);
         }
     }
+
+    
 }

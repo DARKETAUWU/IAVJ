@@ -5,7 +5,10 @@ using UnityEngine;
 public class Interactor : MonoBehaviour
 {
     public GameObject GOStart, GOEnd;
+    
     public bool bStart = false, bEnd = false;
+
+    ASunAgent reference;
 
     void OnTriggerEnter(Collider collision)
     {
@@ -31,4 +34,7 @@ public class Interactor : MonoBehaviour
             bEnd = true;
         }
     }
+
+
+    
 }

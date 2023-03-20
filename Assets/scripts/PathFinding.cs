@@ -35,28 +35,17 @@ public class PathFinding : MonoBehaviour
     {
         // this.runInEditMode= true;
 
-
-
-
         // myTest.DepthFirstSearch(0, 0, 4, 4);
         // myTest.BreadthFirstSearch(2, 2, 1, 1);
         // myTest.BestFirstSearch(0, 0, 2, 0);
         // myTest.DjikstraSearch(0, 0, 4, 4);
         // List<Node> Pathfinding_result = myTest.AStarSearch(StartPosition.x, StartPosition.y, EndPosition.x, EndPosition.y);  // Mío, corregido
 
-
-
         // Asignar ruta a seguir al agente de pathfinding.
         // myAgent.
 
-
         //[0, 1]
         //[0, 0] [1, 0] [2, 0] [3, 0] [4, 0]
-
-
-
-
-
 
         // myGrid = new PFGrid<TileNode>(20, 10, 10f, Vector3.zero,
         //     (PFGrid<TileNode> g, int x, int y) => new TileNode(g, x, y));
