@@ -314,8 +314,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &70038237
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,8 +525,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &133252038
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,8 +603,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &141359304
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,8 +681,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &147341855
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,8 +759,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &165508235
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,8 +837,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &233529137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,8 +997,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &288185785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,8 +1075,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &305011839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,8 +1153,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &350311756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,8 +1603,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &622523127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,8 +1681,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &667184849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,8 +2099,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &839122778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,8 +2472,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &914288508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,8 +2695,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1046749892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,8 +2773,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1136768020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,8 +2851,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1268624624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,8 +2929,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1289510629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,8 +3120,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1417909136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3234,8 +3198,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1531507014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,8 +3276,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1563041754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,8 +3550,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1706200688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3783,8 +3741,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &1906450311
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,8 +4024,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &2006320612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,8 +4102,6 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
 --- !u!1 &2022822777
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,5 +4246,3 @@ MonoBehaviour:
   GOEnd: {fileID: 709654438}
   GOStarter: {fileID: 19018248}
   GOEnder: {fileID: 856758841}
-  bStart: 0
-  bEnd: 0
