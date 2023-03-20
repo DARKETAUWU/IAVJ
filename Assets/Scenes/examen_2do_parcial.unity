@@ -248,7 +248,6 @@ GameObject:
   - component: {fileID: 47492972}
   - component: {fileID: 47492971}
   - component: {fileID: 47492973}
-  - component: {fileID: 47492974}
   m_Layer: 0
   m_Name: 4,2
   m_TagString: Interactor
@@ -313,22 +312,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &47492974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47492969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 4
-  Ynode: 2
 --- !u!1 &70038237
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 336, y: 144}
+  m_AnchoredPosition: {x: 336, y: 92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70038239
@@ -474,7 +461,6 @@ GameObject:
   - component: {fileID: 101155848}
   - component: {fileID: 101155847}
   - component: {fileID: 101155849}
-  - component: {fileID: 101155850}
   m_Layer: 0
   m_Name: 1,2
   m_TagString: Interactor
@@ -539,22 +525,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &101155850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101155845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 1
-  Ynode: 2
 --- !u!1 &133252038
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +540,6 @@ GameObject:
   - component: {fileID: 133252039}
   - component: {fileID: 133252041}
   - component: {fileID: 133252040}
-  - component: {fileID: 133252043}
   - component: {fileID: 133252042}
   m_Layer: 0
   m_Name: 0,0
@@ -632,22 +605,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &133252043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133252038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 0
-  Ynode: 0
 --- !u!1 &141359304
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +621,6 @@ GameObject:
   - component: {fileID: 141359307}
   - component: {fileID: 141359306}
   - component: {fileID: 141359308}
-  - component: {fileID: 141359309}
   m_Layer: 0
   m_Name: 1,0
   m_TagString: Interactor
@@ -725,22 +685,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &141359309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141359304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 1
-  Ynode: 0
 --- !u!1 &147341855
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +701,6 @@ GameObject:
   - component: {fileID: 147341858}
   - component: {fileID: 147341857}
   - component: {fileID: 147341859}
-  - component: {fileID: 147341860}
   m_Layer: 0
   m_Name: 3,4
   m_TagString: Interactor
@@ -818,22 +765,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &147341860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147341855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 3
-  Ynode: 4
 --- !u!1 &165508235
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +781,6 @@ GameObject:
   - component: {fileID: 165508238}
   - component: {fileID: 165508237}
   - component: {fileID: 165508239}
-  - component: {fileID: 165508240}
   m_Layer: 0
   m_Name: 0,3
   m_TagString: Interactor
@@ -866,7 +800,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1906450313}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &165508237
 BoxCollider:
@@ -911,22 +845,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &165508240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165508235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 0
-  Ynode: 3
 --- !u!1 &233529137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +943,6 @@ GameObject:
   - component: {fileID: 253603983}
   - component: {fileID: 253603982}
   - component: {fileID: 253603984}
-  - component: {fileID: 253603985}
   m_Layer: 0
   m_Name: 2,2
   m_TagString: Interactor
@@ -1086,22 +1007,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &253603985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253603980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 2
-  Ynode: 2
 --- !u!1 &288185785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1023,6 @@ GameObject:
   - component: {fileID: 288185788}
   - component: {fileID: 288185787}
   - component: {fileID: 288185789}
-  - component: {fileID: 288185790}
   m_Layer: 0
   m_Name: 4,1
   m_TagString: Interactor
@@ -1179,22 +1087,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &288185790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288185785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 4
-  Ynode: 1
 --- !u!1 &305011839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1103,6 @@ GameObject:
   - component: {fileID: 305011842}
   - component: {fileID: 305011841}
   - component: {fileID: 305011843}
-  - component: {fileID: 305011844}
   m_Layer: 0
   m_Name: 1,1
   m_TagString: Interactor
@@ -1272,22 +1167,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &305011844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305011839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 1
-  Ynode: 1
 --- !u!1 &350311756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1555,6 @@ GameObject:
   - component: {fileID: 615005037}
   - component: {fileID: 615005036}
   - component: {fileID: 615005038}
-  - component: {fileID: 615005039}
   m_Layer: 0
   m_Name: 2,4
   m_TagString: Interactor
@@ -1737,22 +1619,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &615005039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615005034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 2
-  Ynode: 4
 --- !u!1 &622523127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,7 +1635,6 @@ GameObject:
   - component: {fileID: 622523130}
   - component: {fileID: 622523129}
   - component: {fileID: 622523131}
-  - component: {fileID: 622523132}
   m_Layer: 0
   m_Name: 2,1
   m_TagString: Interactor
@@ -1830,22 +1699,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &622523132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622523127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 2
-  Ynode: 1
 --- !u!1 &667184849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1786,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 914288509}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ASunAgent, Assembly-CSharp
         m_MethodName: Selected
         m_Mode: 1
@@ -2070,6 +1927,7 @@ GameObject:
   - component: {fileID: 709654439}
   - component: {fileID: 709654442}
   - component: {fileID: 709654441}
+  - component: {fileID: 709654443}
   m_Layer: 0
   m_Name: End
   m_TagString: End
@@ -2136,7 +1994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709654438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 95.94, y: 3.5, z: 0}
+  m_LocalPosition: {x: 138.1, y: 3.5, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2171,6 +2029,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &709654443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709654438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36b32e5edec1fb4eb0b880fa83cb9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
 --- !u!1 &765802877
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2055,6 @@ GameObject:
   - component: {fileID: 765802880}
   - component: {fileID: 765802879}
   - component: {fileID: 765802881}
-  - component: {fileID: 765802882}
   m_Layer: 0
   m_Name: 3,0
   m_TagString: Interactor
@@ -2248,22 +2119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &765802882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765802877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 3
-  Ynode: 0
 --- !u!1 &839122778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2302,7 @@ GameObject:
   - component: {fileID: 865204031}
   - component: {fileID: 865204034}
   - component: {fileID: 865204033}
+  - component: {fileID: 865204035}
   m_Layer: 0
   m_Name: Start
   m_TagString: Start
@@ -2509,7 +2369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865204030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.28177, y: 3.312302, z: 0}
+  m_LocalPosition: {x: 145.44177, y: 3.312302, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2544,6 +2404,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &865204035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865204030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8cb396568fd20479b54bd24b4f8c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
 --- !u!1 &902557605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,7 +2430,6 @@ GameObject:
   - component: {fileID: 902557608}
   - component: {fileID: 902557607}
   - component: {fileID: 902557609}
-  - component: {fileID: 902557610}
   m_Layer: 0
   m_Name: 3,3
   m_TagString: Interactor
@@ -2621,22 +2494,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &902557610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902557605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 3
-  Ynode: 3
 --- !u!1 &914288508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,8 +2532,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 914288510}
-  fMaxSpeed: 5
-  fMaxForce: 1
+  fMaxSpeed: 1
+  fMaxForce: 0.5
   fPredictionSteps: 10
   fArriveRadius: 3
   bUseArrive: 1
@@ -2682,11 +2543,9 @@ MonoBehaviour:
   CCollider: {fileID: 914288511}
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
-  _Xstart: 0
-  _Ystart: 0
-  _Xend: 0
-  _Yend: 0
   Route:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   fDistanceThreshold: 1
@@ -2796,7 +2655,6 @@ GameObject:
   - component: {fileID: 992178706}
   - component: {fileID: 992178705}
   - component: {fileID: 992178707}
-  - component: {fileID: 992178708}
   m_Layer: 0
   m_Name: 3,2
   m_TagString: Interactor
@@ -2861,22 +2719,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &992178708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992178703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 3
-  Ynode: 2
 --- !u!1 &1046749892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,7 +2735,6 @@ GameObject:
   - component: {fileID: 1046749895}
   - component: {fileID: 1046749894}
   - component: {fileID: 1046749896}
-  - component: {fileID: 1046749897}
   m_Layer: 0
   m_Name: 1,3
   m_TagString: Interactor
@@ -2954,22 +2799,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1046749897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046749892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 1
-  Ynode: 3
 --- !u!1 &1136768020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2982,7 +2815,6 @@ GameObject:
   - component: {fileID: 1136768023}
   - component: {fileID: 1136768022}
   - component: {fileID: 1136768024}
-  - component: {fileID: 1136768025}
   m_Layer: 0
   m_Name: 1,4
   m_TagString: Interactor
@@ -3047,22 +2879,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1136768025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136768020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 1
-  Ynode: 4
 --- !u!1 &1268624624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,7 +2895,6 @@ GameObject:
   - component: {fileID: 1268624627}
   - component: {fileID: 1268624626}
   - component: {fileID: 1268624628}
-  - component: {fileID: 1268624629}
   m_Layer: 0
   m_Name: 3,1
   m_TagString: Interactor
@@ -3140,22 +2959,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1268624629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268624624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 3
-  Ynode: 1
 --- !u!1 &1289510629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3281,7 +3088,6 @@ GameObject:
   - component: {fileID: 1296586138}
   - component: {fileID: 1296586137}
   - component: {fileID: 1296586139}
-  - component: {fileID: 1296586140}
   m_Layer: 0
   m_Name: 2,3
   m_TagString: Interactor
@@ -3346,22 +3152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1296586140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296586135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 2
-  Ynode: 3
 --- !u!1 &1417909136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3374,7 +3168,6 @@ GameObject:
   - component: {fileID: 1417909139}
   - component: {fileID: 1417909138}
   - component: {fileID: 1417909140}
-  - component: {fileID: 1417909141}
   m_Layer: 0
   m_Name: 4,0
   m_TagString: Interactor
@@ -3439,22 +3232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1417909141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417909136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 4
-  Ynode: 0
 --- !u!1 &1531507014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,7 +3248,6 @@ GameObject:
   - component: {fileID: 1531507017}
   - component: {fileID: 1531507016}
   - component: {fileID: 1531507018}
-  - component: {fileID: 1531507019}
   m_Layer: 0
   m_Name: 0,1
   m_TagString: Interactor
@@ -3532,22 +3312,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1531507019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531507014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 0
-  Ynode: 1
 --- !u!1 &1563041754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,7 +3524,6 @@ GameObject:
   - component: {fileID: 1639704775}
   - component: {fileID: 1639704774}
   - component: {fileID: 1639704776}
-  - component: {fileID: 1639704777}
   m_Layer: 0
   m_Name: 4,3
   m_TagString: Interactor
@@ -3821,22 +3588,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1639704777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639704772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 4
-  Ynode: 3
 --- !u!1 &1706200688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,7 +3604,6 @@ GameObject:
   - component: {fileID: 1706200693}
   - component: {fileID: 1706200692}
   - component: {fileID: 1706200691}
-  - component: {fileID: 1706200690}
   m_Layer: 0
   m_Name: Default
   m_TagString: Default
@@ -3871,18 +3625,6 @@ Transform:
   m_Father: {fileID: 839122780}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1706200690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706200688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e8ce7fe3023784dbf572b6b4bd9001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1706200691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3975,7 +3717,6 @@ GameObject:
   - component: {fileID: 1855140629}
   - component: {fileID: 1855140628}
   - component: {fileID: 1855140630}
-  - component: {fileID: 1855140631}
   m_Layer: 0
   m_Name: 0,4
   m_TagString: Interactor
@@ -3995,7 +3736,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1906450313}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1855140628
 BoxCollider:
@@ -4040,22 +3781,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1855140631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855140626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 0
-  Ynode: 4
 --- !u!1 &1906450311
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,8 +3832,8 @@ Transform:
   - {fileID: 133252039}
   - {fileID: 1531507015}
   - {fileID: 2006320613}
-  - {fileID: 1855140627}
   - {fileID: 165508236}
+  - {fileID: 1855140627}
   - {fileID: 141359305}
   - {fileID: 305011840}
   - {fileID: 101155846}
@@ -4164,7 +3893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 336, y: 201}
+  m_AnchoredPosition: {x: 336, y: 149}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947150113
@@ -4273,7 +4002,6 @@ GameObject:
   - component: {fileID: 1960302320}
   - component: {fileID: 1960302319}
   - component: {fileID: 1960302321}
-  - component: {fileID: 1960302322}
   m_Layer: 0
   m_Name: 2,0
   m_TagString: Interactor
@@ -4338,22 +4066,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &1960302322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960302317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 2
-  Ynode: 0
 --- !u!1 &2006320612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4366,7 +4082,6 @@ GameObject:
   - component: {fileID: 2006320615}
   - component: {fileID: 2006320614}
   - component: {fileID: 2006320616}
-  - component: {fileID: 2006320617}
   m_Layer: 0
   m_Name: 0,2
   m_TagString: Interactor
@@ -4431,22 +4146,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &2006320617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006320612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 0
-  Ynode: 2
 --- !u!1 &2022822777
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,7 +4228,6 @@ GameObject:
   - component: {fileID: 2132130385}
   - component: {fileID: 2132130384}
   - component: {fileID: 2132130386}
-  - component: {fileID: 2132130387}
   m_Layer: 0
   m_Name: 4,4
   m_TagString: Interactor
@@ -4590,19 +4292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GOStart: {fileID: 865204030}
   GOEnd: {fileID: 709654438}
+  GOStarter: {fileID: 19018248}
+  GOEnder: {fileID: 856758841}
   bStart: 0
   bEnd: 0
---- !u!114 &2132130387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132130382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c793112cbff858c4bbe9cfb6f3b6bc61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xnode: 4
-  Ynode: 4
