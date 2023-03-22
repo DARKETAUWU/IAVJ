@@ -462,22 +462,34 @@ public class ClassGrid
             List<Node> currentNeighbors = GetNeighbors(currentNode);
             foreach (Node neighbor in currentNeighbors)
             {
+               
                 if (ClosedList.Contains(neighbor))
+                {
                     continue;  // podríamos cambiar esto de ser necesario.
-
+                    
+                }
+                    
+                    
 
                 float fCostoTentativo = neighbor.fTerrainCost + currentNode.g_Cost;
+                debugTextArray[neighbor.y, neighbor.x].text = Nodes[neighbor.y, neighbor.x].ToString() + Environment.NewLine + "FCost: " + neighbor.f_Cost.ToString() +
+                                                                         Environment.NewLine + "Gcost" + neighbor.g_Cost.ToString() + Environment.NewLine + "Hcost" + neighbor.h_Cost.ToString();
+                debugTextArray[neighbor.y, neighbor.x].fontSize = 15;
+                debugTextArray[neighbor.y, neighbor.x].color = Color.blue;
 
                 // Si no lo contiene, entonces lo agregamos a la lista Abierta
                 // Si ya está en la lista abierta, hay que dejar solo la versión de ese nodo con el 
                 // menor costo.
                 if (OpenList.Contains(neighbor))
                 {
+                    
                     // Checamos si este neighbor tiene un costo MENOR que el que ya está en la lista abierta
                     if (fCostoTentativo < neighbor.g_Cost)
                     {
+                        
                         // Entonces lo tenemos que remplazar en la lista abierta.
                         OpenList.Remove(neighbor);
+                        
                     }
                     else
                     {
@@ -485,19 +497,21 @@ public class ClassGrid
                     }
                 }
 
-                //se imprime el costo de haber llegado a la casilla
-                Debug.Log("El g_cost es: " + neighbor.g_Cost);
-                //Se imprime el costo del terreno
-                Debug.Log("El costo del terreno es " + neighbor.fTerrainCost);
-                //El costo asociado a la casilla para poder pasar
-                Debug.Log("El costo de la casilla es " + neighbor.h_Cost);
-                //Se imprime la suma de los costos de los terrenos
-                Debug.Log("La suma de los costos es " + neighbor.f_Cost);
+                ////se imprime el costo de haber llegado a la casilla
+                //Debug.Log("El g_cost es: " + neighbor.g_Cost);
+                ////Se imprime el costo del terreno
+                //Debug.Log("El costo del terreno es " + neighbor.fTerrainCost);
+                ////El costo asociado a la casilla para poder pasar
+                //Debug.Log("El costo de la casilla es " + neighbor.h_Cost);
+                ////Se imprime la suma de los costos de los terrenos
+                //Debug.Log("La suma de los costos es " + neighbor.f_Cost);
+                
                 neighbor.Parent = currentNode;
                 neighbor.g_Cost = fCostoTentativo;
                 neighbor.h_Cost = GetDistance(neighbor, EndNode);
                 neighbor.f_Cost = neighbor.g_Cost + neighbor.h_Cost;
                 OpenList.Insert((int)neighbor.f_Cost, neighbor);
+                
             }
 
             foreach (Node n in OpenList.Nodes)
@@ -573,33 +587,54 @@ public class ClassGrid
     // Enumera un camino en el orden que tiene y lo muestra en los debugTextArray.
     public void EnumeratePath(List<Node> in_path)
     {
-            //Cambiamos los colores de las casillas a color azul, esto por medio de los nodos y un recorrido en el for
-            for (int y = 0; y < iHeight; y++)
-            {
-                for (int x = 0; x < iWidth; x++)
-                {
-                    
-                    debugTextArray[y,x].text = Nodes[y, x].ToString();
-                    debugTextArray[y, x].color = Color.blue; 
-
-                }
-            }
        
-        //imprime los nodos que seran recorridos a lo largo de la tabla
         int iCounter = 0;
         foreach (Node n in in_path)
         {
             iCounter++;
-            debugTextArray[n.y, n.x].text = n.ToString() +
+            debugTextArray[n.y, n.x].text = n.ToString() + Environment.NewLine + "FCost: " + n.f_Cost.ToString() + "Hcost" + n.g_Cost +
                 Environment.NewLine + "Step: " + iCounter.ToString();
             debugTextArray[n.y, n.x].color =  Color.red;;
-           
+            debugTextArray[n.y, n.x].fontSize = 15;
+
+
         }
-
-       
-
     }
 
+    public void EnumeratePathCasillas(List<Node> GetNeighborsCost)
+    {
+        //Cambiamos los colores de las casillas a color azul, esto por medio de los nodos y un recorrido en el for
+        foreach (Node n in GetNeighborsCost)
+        {
+            for (int y = 0; y < iHeight; y++)
+            {
+                for (int x = 0; x < iWidth; x++)
+                {
+
+                    debugTextArray[y, x].text = Nodes[y, x].ToString() + Environment.NewLine + "FCost: " +  n.f_Cost.ToString() + 
+                                                                         Environment.NewLine + "Gcost" + n.g_Cost + Environment.NewLine + "Hcost" + n.h_Cost;
+                    debugTextArray[y, x].fontSize = 15;
+                    debugTextArray[y, x].color = Color.blue;
+
+                }
+            }
+        }
+        //imprime los nodos que seran recorridos a lo largo de la tabla
+        //int iCounter = 0;
+        //foreach (Node n in in_path)
+        //{
+        //    iCounter++;
+        //    debugTextArray[n.y, n.x].text = n.ToString() + Environment.NewLine + "FCost: " + n.f_Cost.ToString() + "Hcost" + n.g_Cost +
+        //        Environment.NewLine + "Step: " + iCounter.ToString();
+        //    debugTextArray[n.y, n.x].color = Color.red; ;
+        //    debugTextArray[n.y, n.x].fontSize = 15;
+
+
+        //}
+
+
+
+    }
     public int GetDistance(Node in_a, Node in_b)
     {
         // FALTÓ QUE SEAN INT BIEN
