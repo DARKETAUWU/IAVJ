@@ -472,10 +472,7 @@ public class ClassGrid
                     
 
                 float fCostoTentativo = neighbor.fTerrainCost + currentNode.g_Cost;
-                debugTextArray[neighbor.y, neighbor.x].text = Nodes[neighbor.y, neighbor.x].ToString() + Environment.NewLine + "FCost: " + neighbor.f_Cost.ToString() +
-                                                                         Environment.NewLine + "Gcost" + neighbor.g_Cost.ToString() + Environment.NewLine + "Hcost" + neighbor.h_Cost.ToString();
-                debugTextArray[neighbor.y, neighbor.x].fontSize = 15;
-                debugTextArray[neighbor.y, neighbor.x].color = Color.blue;
+                
 
                 // Si no lo contiene, entonces lo agregamos a la lista Abierta
                 // Si ya está en la lista abierta, hay que dejar solo la versión de ese nodo con el 
@@ -490,6 +487,7 @@ public class ClassGrid
                         // Entonces lo tenemos que remplazar en la lista abierta.
                         OpenList.Remove(neighbor);
                         
+
                     }
                     else
                     {
@@ -511,7 +509,11 @@ public class ClassGrid
                 neighbor.h_Cost = GetDistance(neighbor, EndNode);
                 neighbor.f_Cost = neighbor.g_Cost + neighbor.h_Cost;
                 OpenList.Insert((int)neighbor.f_Cost, neighbor);
-                
+                debugTextArray[neighbor.y, neighbor.x].text = Nodes[neighbor.y, neighbor.x].ToString() + Environment.NewLine + "FCost: " + neighbor.f_Cost.ToString() +
+                                                                         Environment.NewLine + "Gcost" + neighbor.g_Cost.ToString() + Environment.NewLine + "Hcost" + neighbor.h_Cost.ToString();
+                debugTextArray[neighbor.y, neighbor.x].fontSize = 15;
+                debugTextArray[neighbor.y, neighbor.x].color = Color.blue;
+
             }
 
             foreach (Node n in OpenList.Nodes)
@@ -592,8 +594,9 @@ public class ClassGrid
         foreach (Node n in in_path)
         {
             iCounter++;
-            debugTextArray[n.y, n.x].text = n.ToString() + Environment.NewLine + "FCost: " + n.f_Cost.ToString() + "Hcost" + n.g_Cost +
-                Environment.NewLine + "Step: " + iCounter.ToString();
+            debugTextArray[n.y, n.x].text = n.ToString() + Environment.NewLine + "FCost: " + n.f_Cost.ToString() + Environment.NewLine + "Hcost" + n.h_Cost + 
+                                            Environment.NewLine + "Gcost" + n.g_Cost +
+                                            Environment.NewLine + "Step: " + iCounter.ToString();
             debugTextArray[n.y, n.x].color =  Color.red;;
             debugTextArray[n.y, n.x].fontSize = 15;
 
